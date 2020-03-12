@@ -1,0 +1,196 @@
+ /*Cabecera*/
+ 
+ header {
+	background-color: #5b7989;	
+	height: 100px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	flex-direction: row;
+}
+body{
+	font-family: 'Dancing Script', cursive;
+	}
+
+.titulo	{
+	font-size: 1em;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	margin: 20px;
+}
+
+.menu  {
+display: flex;
+flex-direction: row;
+margin: auto;
+text-shadow: 2px 2px #02010a;
+}
+	.menu a {
+		padding: 10px;
+		color: white;
+	}
+	
+*{
+	margin: 0;
+	padding: 0;
+  }
+
+/*Galeria de imagenes*/
+
+.contenedor {
+	background:  #d5c75f ;
+
+}
+.contenedor img{
+	width:90%;
+		padding:7%;
+}
+
+
+/* secction 1*/
+
+#section1 {
+
+	display: flex;
+}
+
+#imagen1 img {
+width: 70%;
+margin: 30px 30px 0px 30px;
+filter: blur(10px);
+}
+
+#imagen2 img {
+width: 70%;
+margin: 30px 30px 0px 30px;
+filter: grayscale(100%);
+
+}
+#imagen3 img {
+    width: 70%;
+	margin: 30px 30px 0px 30px;
+	filter: sepia(90%);
+    
+	}
+	
+/* secction 2*/
+
+#section2{
+	display: flex;
+}
+
+#imagen4 img {
+        width: 70%;
+		margin: 30px 30px 0px 30px;
+		filter: grayscale(100%);
+        
+        }
+   
+#imagen5 img {
+            width: 70%;
+            margin: 30px 30px 0px 30px;
+            
+            }
+    
+#imagen6 img {
+                width: 70%;
+				margin: 30px 30px 0px 30px;
+				filter: grayscale(100%);
+                
+				}
+				
+/* pie de pajina*/
+
+				.container-all{
+					width: 100%;
+					margin: auto;
+				}
+
+footer {
+			background: #C6d5c5;
+			border-radius: 5px;
+			}
+				
+	/* columna1 contactos */
+				
+	/* columna2 terminos*/
+				
+	/* columna3 redes sociales*/
+
+	.container-body{
+					display: flex;
+					flex-flow: row wrap;
+				}
+				
+	.container-body>div {
+						width: 25%;
+						text-align: center;
+						}
+	#redes {
+					margin-top: 20px;
+					margin-left: 30px;
+					text-align: left;
+					}
+				
+	#redes img{
+					width: 36px;
+					height: 36px;
+				}
+				
+	#redes label{
+					margin-top: 10px;
+					margin-left: 10px;
+				}
+				/* columna4 derechos*/
+
+/* tutilo adaptativoo*/
+
+
+@media (max-width :420px) {
+		.contein {
+		display: flex;
+		flex-direction: column;
+		height: 120px;
+		}
+	}
+
+/* columna movil para galeria de imagenes*/
+
+@media (max-width :420px) {
+	#section1 {
+	display: flex;
+	flex-direction: column;
+	}
+	#section1 img {
+	width: 70%;
+	}
+	}
+
+@media (max-width :420px) {
+		#section2 {
+		display: flex;
+		flex-direction: column;
+		}
+		#section2 img {
+		width: 70%;
+		}
+		
+		}
+
+/*Columna movil para el pie de pajina */
+			
+@media (max-width :420px) {
+	.container-body {
+		display: flex;
+		flex-direction: column !important;
+					
+			}
+	.container-body>div {
+				width: 100%;
+				}
+		#redes {
+					margin-left: 90px;
+				
+				}
+			}
+				

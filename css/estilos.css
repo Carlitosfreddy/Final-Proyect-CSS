@@ -1,0 +1,197 @@
+ /*Cabecera*/
+ 
+ header {
+	background-color: #5b7989;	
+	height: 100px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	flex-direction: row;
+}
+body{
+	font-family: 'Dancing Script', cursive;
+	}
+
+.titulo	{
+	font-size: 1em;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	margin: 20px;
+}
+
+.menu  {
+display: flex;
+flex-direction: row;
+margin: auto;
+text-shadow: 2px 2px #02010a;
+}
+	.menu a {
+		padding: 10px;
+		color: white;
+	}
+
+
+/*Imagen Central*/
+*{
+	margin: 0;
+	padding: 0;
+  }
+
+#imagen1{
+	text-align: center;
+	background-color: #82c3a6;
+	height: 500px;
+}
+#imagen1 img{
+	margin-top: 20px;
+}
+
+
+/*Imagen Secuendaria*/
+
+#imagen2,
+#imagen3 {
+	text-align: center;
+width: 50%;
+}
+
+#imagen3 img {
+width: 80%;
+margin: 30px 30px 0px 30px;
+}
+
+#imagen2 img {
+width: 80%;
+margin: 30px 30px 0px 30px;
+
+}
+
+#imagen2 div{
+	margin-bottom: 30px;
+	}
+	
+	
+	#imagen3 div{
+	margin-bottom: 30px;
+	}
+.contenedor {
+	background:  #d5c75f ;
+	display: flex;
+	flex-flow:row wrap;
+}
+
+ /* animacion imagen 2*/ 
+#imagen2 img:hover{
+	transform: rotate(10deg);
+	text-shadow: 2px 2px #82c3a6;
+}
+ 
+/*animacion imagen 3*/
+
+#imagen3 img:hover{
+transform: translateX(5px);
+transform: translateX(20px);
+	text-shadow: 2px 2px #82c3a6 ;
+}
+ 
+/* pie de pajina*/
+.container-all{
+	width: 100%;
+	margin: auto;
+}
+footer {
+background: #C6d5c5;
+border-radius: 5px;
+}
+
+/* columna1 contactos */
+
+/* columna2 terminos*/
+
+/* columna3 redes sociales*/
+.container-body{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.container-body>div {
+		width: 25%;
+		text-align: center;
+		}
+#redes {
+	margin-top: 20px;
+	margin-left: 30px;
+	text-align: left;
+	}
+
+#redes img{
+	width: 36px;
+	height: 36px;
+}
+
+#redes label{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+/* columna4 derechos*/
+
+/* tutilo adaptativo para movil*/
+
+
+@media (max-width :420px) {
+	.contein {
+	display: flex;
+	flex-direction: column;
+	height: 120px;
+	}
+}
+
+/* imagen principal  adaptativo para movil*/
+
+
+	@media (max-width :420px) {
+		#imagen1 img{
+			width: 80%;
+			text-align: center;
+			max-width: 100%;
+		}
+		#imagen1{
+			background-color: #82c3a6;
+			height: 220px;
+		}
+	}
+
+/*columna movil para las imagnes 2 y 3 */
+
+@media (max-width :420px) {
+	.contenedor {
+	background: #d5c75f;
+	display: flex;
+	flex-direction: column;
+	}
+	#imagen2, #imagen3 {
+	text-align: center;
+	width: 100%;
+	}
+	.container-body{
+		display: flex;
+		flex-direction: column;	
+	}
+	}
+
+/*Columna movil para el pie de pajina */
+
+@media (max-width :420px) {
+	.container-body {
+	display: flex;
+	flex-direction: column !important;
+
+	}
+	.container-body>div {
+		width: 100%;
+		}
+	#redes {
+		margin-left: 90px;
+	
+	}
+}
